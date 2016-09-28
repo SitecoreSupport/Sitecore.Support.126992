@@ -2,7 +2,7 @@
 Prevents too many redirects when accessing an item with MVC layout using Experience Editor after session expiration
 
 ## Description
-The “Too many redirects” error may occur when accessing an item with MVC layout using Experience Editor in the following cases:
+Prevents the “Too many redirects” error that may occur when accessing an item with MVC layout using Experience Editor in the following cases:
 - after session expiration
 - request the same URL in the incognito mode or in another browser
 
