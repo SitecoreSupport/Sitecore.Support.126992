@@ -1,8 +1,10 @@
 # Sitecore.Support.126992
-Prevents too many redirects when access an item with MVC layout using Experience Editor after session expiration
+Prevents too many redirects when accessing an item with MVC layout using Experience Editor after session expiration
 
 ## Description
-TODO: provide more details here.
+The “Too many redirects” error may occur when accessing an item with MVC layout using Experience Editor in the following cases:
+- after session expiration
+- request the same URL in the incognito mode or in another browser.
 
 ## License  
 This patch is licensed under the [Sitecore Corporation A/S License for GitHub](https://github.com/sitecoresupport/Sitecore.Support.126992/blob/master/LICENSE).  
