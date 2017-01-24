@@ -23,11 +23,13 @@ namespace Sitecore.Support.ExperienceEditor.Speak.Ribbon.PageExtender
         protected override void DoRender(HtmlTextWriter output)
         {
             Sitecore.Sites.SiteContext site = Sitecore.Configuration.Factory.GetSite("shell");
-            using (new Sitecore.Sites.SiteContextSwitcher(site))
+
+            // Sitecore.Support.126992
+          /*  using (new Sitecore.Sites.SiteContextSwitcher(site))
             {
-                // Sitecore.Support.126992
+                
                 Sitecore.Shell.Web.ShellPage.IsLoggedIn(false);
-            }
+            }*/
             string mode = this.Mode;
             bool webEdit = mode == "edit";
             bool debug = mode == "debug";
